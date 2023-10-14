@@ -1,0 +1,95 @@
+In this Article. we will be talking about the challenges of machine learning. As everything comes with some challenges packed with it, Machine Learning is no exception.
+
+As the main task is to select a learning algorithm and train it over data. The thing that might go wrong is either the " bad data "  or " bad algorithm "
+
+Let start with bad data 
+
+Low Quantity of Data for training
+For humans, if we have to classify between two new things given to us. we just have to see some of the examples and then, we are ready to go. But for Machine it's not quite easy task as the machine doesn't have a super talented brain like us.
+
+We may need thousands or even millions of images for complex problems ( unless we reuse another existing model ).
+
+Nonrepresentative Training data
+In order to make a good model. it is important for data to represent all the cases that can be possible. 
+
+For example, if we train a model to predict the gender of a person based on his/her image . The data includes the images of both males and females.
+
+But if the data include images of all males with short hair and all the females with long hair.
+
+Then the model might converse on to the fact that all males have short hair. whereas all females have long hair. 
+
+But Clearly, that's not the case, males can have long hair and females can have short hair. So it is necessary that data must include all types of cases that are possible.
+
+Bad Quality of Data
+It's obvious if the training data is full of errors and outliers (due to poor measurements, defeated sensors, untrusted sources). Then the model will not be able to converse to a good solution and it will not perform well.
+
+We can fix or clean the data in the following ways:
+
+If some of the data are clearly outliers, it will be good to leave those data points.
+If some of the data is missing then you can either discard that whole column or discard that specific row or either fill them with median value.
+Irrelevant Features
+The system will learn easily if we have enough relevant features and not too many irrelevant features.
+Selecting a good set of features and training on them. This process is called feature engineering.
+This includes the following:
+Feature Selection: selecting the most useful features from available ones
+Feature Extraction: combining features to get more relevant features
+Creating new features by gathering information.
+
+Now, let's look at the example of bad algorithms
+
+Overfitting and Underfitting
+Let's remember our school days there are mostly 3 types of students 
+
+Type A - not interested in class always busy whispering with friends.
+Type B - pay attention in a class mug up all the things don't care about depth understanding of the topic.
+Type C- pay attention in class always try to learn new concepts by understanding them.
+
+If they were given an assignment that includes the question that is discussed in class 
+
+The result would likely be :
+
+Type A - 50% (random guess)
+Type B - 98% (I have memorized all the questions when discussed in class)
+Type C - 95% (I understand the logic behind them)
+
+But if they were given the assignment that includes the question that is not discussed in class and needs a slightly different approach to solve
+The result would likely be :
+
+Type A - 40% (random guess)
+Type B - 63% (question asked are out of syllabus 😫😭)
+Type C - 90% ( I know the logic behind them I can solve them)
+
+So, here
+' A ' is Underfitting 
+' B ' is Overfitting
+' C ' is the correct one 
+
+" 
+Note : There are also Type - D (those who doesn't pay attention in class and still got Good marks ).
+ "
+
+In a Technical sense,
+
+If the model performs well on training data but doesn't perform well on testing data. this is " Overfitting "
+
+If the model performs well on training data as well as testing data, then we are good to go
+
+If the model performs worst both on training and testing data, then it is known as " Underfitting "
+
+
+
+
+How to get rid of Overfitting
+Use a simple model rather than a complex one for example use a linear model instead of high degree polynomial models
+Try tweaking the hyperparameters of the model (discussed later when learning about models)
+Get more data
+Reduce or Remove the outliers in data
+
+How to get rid of Underfitting
+Use the more powerful model instead of simple ones for example use high degree polynomial models instead of the linear model
+Try tweaking the hyperparameters of the model (discussed later when learning about models)
+Feed better features to the algorithm (features engineering)
+
+
+
+With this, until next time...
